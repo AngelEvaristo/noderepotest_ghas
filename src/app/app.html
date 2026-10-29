@@ -1,0 +1,11 @@
+<main class="container">
+  <h1>Demo Angular</h1>
+  <p>Haz clic en el boton para mostrar el mensaje.</p>
+
+  <button type="button" (click)="showMessage()">Mostrar mensaje</button>
+
+  @if (clicked) {
+    <p class="message">Hola, hiciste clic y el mensaje aparecio en pantalla.</p>
+    <p class="message">Contador de clics: {{ clickCount }}</p>
+  }
+</main>
